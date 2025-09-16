@@ -4,10 +4,12 @@ Name:Javan Ichingwa
 Reg:PA106/28767/25
 Description:Program to dispay all units for this semester
 */
+//import library 
 #include<stdio.h>//preprocessor directive :scanf(),
 
 //main function
 int main (){
+    //display all units for semester 1
     printf("SPC 2101 Introduction to programming and problem solving\n");
     printf("SPI 2102 Computer System and Organisation\n");
     printf("SPM 2100 Descrete Mathematics\n");
@@ -17,4 +19,5 @@ int main (){
     printf("UCU 2106 Communication and Information Literaly Skills\n");
 
     return 0;
+
 }
