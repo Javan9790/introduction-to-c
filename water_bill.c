@@ -13,19 +13,19 @@ int water_units;
 float totalbill;
 
 //prompt the user to enter water_units
-printf("Enter water_units:");
+printf("Enter water_units:\t");
 scanf("%d", & water_units);
 printf("water_units are %d\n",water_units);
 
-if(water_units >=0 && water_units <=30\t)	{
+if(water_units >=0 && water_units <=30)	{
 	totalbill = water_units * 20;
 }
 
-else if(water_units >=31 && water_units <=60\t){
+else if(water_units >=31 && water_units <=60){
 	totalbill = water_units * 25;	
 	}
 	
-else if(water_units >=60\t) {
+else if(water_units >=60) {
 	totalbill = water_units * 60;
 }
 //Display the totalbill
@@ -40,4 +40,5 @@ return 0 ;
 	
 
 	
+
 
