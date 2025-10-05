@@ -11,7 +11,7 @@ until the correct one is entered.once correct display "Access granted"
 	  int correct_password=1234; //start
 	  
 	  do{
-	  ("Enter the password:\t");
+	  ("Enter the password:\n");
 	  scanf("%d",&password);
 	  
 	  if(password != correct_password)
@@ -28,4 +28,5 @@ until the correct one is entered.once correct display "Access granted"
   
   return 0;
   
+
   }
