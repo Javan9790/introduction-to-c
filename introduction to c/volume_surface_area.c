@@ -16,11 +16,11 @@ int main (){
 	pi = 22/7;
 
 	//prompt the user to enter radius
-	printf("\n Enter radius;");
+	printf("\n Enter radius:");
 	scanf("%f", &radius);
 	
 	//prompt the user to enter height
-	printf("\n Enter heiight;");
+	printf("\n Enter heiight:");
 	scanf("%f", &height);
 	 
 	// compute volume
