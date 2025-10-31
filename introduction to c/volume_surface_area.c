@@ -27,13 +27,13 @@ int main (){
 	volume = pi * radius * radius * height;
 	
 	//display volume
-	printf("\n volume is %f",volume);
+	printf("\n volume is %.2f",volume);
 	
 	//compute surface_area
 	surface_area=2*pi*radius*radius*+2*pi*radius*height;
 	  
 	  //display surface_area
-	  printf("\n surface_area is %f",surface_area);
+	  printf("\n surface_area is %.2f",surface_area);
 	  
 	  return 0;
 }
