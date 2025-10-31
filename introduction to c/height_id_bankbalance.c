@@ -1,4 +1,4 @@
- 
+//Good day 
 /* 
 Name:Javan Ichingwa
 Reg:PA106/28767/G/25
@@ -29,6 +29,7 @@ int (){
 
     return 0;
 }
+
 
 
 
