@@ -1,0 +1,44 @@
+/*
+Javan Ichingwa
+PA106/G/28767/25
+sales file
+*/
+
+#include<stdio.h> 
+
+int main (){
+	FILE *fptr=NULL;
+	float transactionAmount;//variable to hold current transaction
+	 float totalSales = 0.0f; //variable to contain total sales from zzero
+	
+    // 1. Open the file for reading ("r")
+	fptr = fopen("C:\\Users\\-__-\\OneDrive\\Desktop\\sales.txt", "r");
+
+    // Check if the file opened successfully
+    if (fptr == NULL) {
+        fprintf(stderr, "Error: Could not open the file 'sales.txt'.\n");// If file opening failed 
+        return 1; // Return error code
+    }
+
+    // 2. Read all transactions from the file until EOF reached
+    printf("Reading transactions from 'sales.txt'...\n");
+    while (fscanf(fptr, "%f", &transactionAmount) == 1) {
+        totalSales += transactionAmount;// Add the transaction amount to the running total
+    }
+    
+    // 3. Ensure the file is properly closed
+    if (fclose(fptr) == 0) {
+        printf("File 'sales.txt' successfully closed!\n");
+    } else {
+        fprintf(stderr, "Warning! Failed to close the file 'sales.txt'.\n");
+    }
+
+    // 2. Calculate and display the total sales for the day
+    printf("\n--- Daily Sales Summary ---\n");
+    printf("Total Sales: $%.2f\n", totalSales);
+    printf("---------------------------\n");
+
+    return 0; // success code
+}
+	return 0;
+}
